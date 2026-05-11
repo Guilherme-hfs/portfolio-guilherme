@@ -319,25 +319,31 @@ textarea:focus{
 
 form button{
 
-    padding: 18px;
+    width: 220px;
+
+    margin: auto;
+
+    padding: 15px;
 
     border: none;
-
-    border-radius: 12px;
 
     background-color: #2563eb;
 
     color: white;
 
-    font-size: 16px;
+    border-radius: 10px;
 
     cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: bold;
 
     transition: 0.3s;
 }
 
 form button:hover{
-
+    transform: scale(1.03);
     background-color: #1d4ed8;
 }
 
@@ -370,11 +376,14 @@ form button:hover{
 
     color: white;
 
-    padding: 15px 28px;
+    padding: 14px 24px;
 
-    border-radius: 12px;
+    border-radius: 14px;
 
     transition: 0.3s;
+
+    box-shadow:
+    0px 4px 15px rgba(0,0,0,0.15);
 }
 
 .rede-btn:hover{
@@ -401,13 +410,17 @@ form button:hover{
 
 footer{
 
-    background-color: #111827;
+    background-color: #0d1b2a;
 
     color: white;
 
     text-align: center;
 
-    padding: 30px;
+    padding: 25px 20px;
+
+    line-height: 1.8;
+
+    font-size: 15px;
 }
 
 /* ================= DARK MODE ================= */
@@ -511,4 +524,33 @@ footer{
         font-size: 2rem;
     }
 
+}
+/* BOTÃO PROJETO */
+
+.projeto-btn{
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 22px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.projeto-btn:hover{
+
+    background-color: #1d4ed8;
+
+    transform: translateY(-3px);
 }
