@@ -1,0 +1,514 @@
+/* ================= RESET ================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #ffffff;
+
+    color: #1f2937;
+
+    line-height: 1.7;
+
+    transition: 0.3s;
+}
+
+/* ================= MENU ================= */
+
+header{
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    z-index: 999;
+
+    background-color: rgba(255,255,255,0.95);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+    0px 2px 10px rgba(0,0,0,0.05);
+}
+
+.menu{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    list-style: none;
+
+    padding: 20px;
+}
+
+.menu li{
+
+    margin: 0 20px;
+}
+
+.menu a{
+
+    text-decoration: none;
+
+    color: #111827;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu a:hover{
+
+    color: #2563eb;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    min-height: 100vh;
+
+    background-color: #ffffff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 120px 20px 80px;
+}
+
+.hero-conteudo{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 70px;
+
+    flex-wrap: wrap;
+
+    max-width: 1200px;
+}
+
+.foto-perfil{
+
+    width: 230px;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    border-radius: 20px;
+
+    box-shadow:
+    0px 10px 30px rgba(0,0,0,0.12);
+
+    transition: 0.3s;
+}
+
+.foto-perfil:hover{
+
+    transform: scale(1.02);
+}
+
+.hero-texto{
+
+    max-width: 550px;
+}
+
+.hero-texto h1{
+
+    font-size: 4rem;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+
+    color: #111827;
+}
+
+.hero-texto p{
+
+    font-size: 1.2rem;
+
+    color: #4b5563;
+}
+
+/* ================= BOTÃO TEMA ================= */
+
+.tema-btn{
+
+    position: fixed;
+
+    top: 20px;
+
+    right: 20px;
+
+    z-index: 9999;
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+    0px 4px 15px rgba(0,0,0,0.2);
+}
+
+.tema-btn:hover{
+
+    transform: scale(1.1);
+}
+
+/* ================= SEÇÕES ================= */
+
+.secao{
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 100px 20px;
+}
+
+.secao h2{
+
+    text-align: center;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 50px;
+
+    color: #111827;
+}
+
+.secao p{
+
+    margin-bottom: 25px;
+
+    font-size: 1.05rem;
+
+    color: #374151;
+}
+
+/* ================= CARDS ================= */
+
+.cards{
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+}
+
+.card{
+
+    background-color: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    border: 1px solid #e5e7eb;
+
+    transition: 0.3s;
+
+    box-shadow:
+    0px 5px 20px rgba(0,0,0,0.05);
+}
+
+.card:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow:
+    0px 15px 30px rgba(0,0,0,0.1);
+}
+
+.card h3{
+
+    margin-bottom: 20px;
+
+    color: #111827;
+}
+
+.info-extra{
+
+    color: #2563eb;
+
+    font-weight: bold;
+}
+
+.estrelas{
+
+    color: #fbbf24;
+
+    font-size: 1.1rem;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+/* ================= FORMULÁRIO ================= */
+
+form{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+input,
+textarea{
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    border: 1px solid #d1d5db;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus{
+
+    outline: none;
+
+    border-color: #2563eb;
+}
+
+form button{
+
+    padding: 18px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+form button:hover{
+
+    background-color: #1d4ed8;
+}
+
+/* ================= REDES ================= */
+
+.redes{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    padding-bottom: 60px;
+
+    flex-wrap: wrap;
+}
+
+.rede-btn{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    text-decoration: none;
+
+    background-color: #111827;
+
+    color: white;
+
+    padding: 15px 28px;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.rede-btn:hover{
+
+    transform: translateY(-5px);
+
+    background-color: #2563eb;
+}
+
+.rede-btn img{
+
+    width: 24px;
+
+    height: 24px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    padding: 2px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+/* ================= DARK MODE ================= */
+
+.dark{
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+.dark header{
+
+    background-color: rgba(15,23,42,0.95);
+}
+
+.dark .menu a{
+
+    color: white;
+}
+
+.dark .hero{
+
+    background-color: #0f172a;
+}
+
+.dark .hero-texto h1{
+
+    color: white;
+}
+
+.dark .hero-texto p{
+
+    color: #cbd5e1;
+}
+
+.dark .secao h2{
+
+    color: white;
+}
+
+.dark .secao p{
+
+    color: #d1d5db;
+}
+
+.dark .card{
+
+    background-color: #1e293b;
+
+    border-color: #334155;
+
+    color: white;
+}
+
+.dark input,
+.dark textarea{
+
+    background-color: #1e293b;
+
+    color: white;
+
+    border-color: #475569;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+
+@media(max-width:768px){
+
+    .menu{
+
+        flex-wrap: wrap;
+    }
+
+    .hero-conteudo{
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-texto{
+
+        text-align: center;
+    }
+
+    .hero-texto h1{
+
+        font-size: 2.8rem;
+    }
+
+    .foto-perfil{
+
+        width: 220px;
+
+        height: 280px;
+    }
+
+    .secao h2{
+
+        font-size: 2rem;
+    }
+
+}
